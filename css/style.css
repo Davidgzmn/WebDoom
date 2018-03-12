@@ -1,0 +1,185 @@
+* {
+    font-family: helvetica, arial;
+}
+body {
+    background-color:black;
+}
+
+body,div {
+    margin:0;
+    padding:0;
+    border:none;
+    color:#fff;
+}
+
+/* Styles for illustrating the example */
+
+div {
+    position: absolute;
+    background-color: #999;
+}
+
+
+.debug {
+    position:absolute;
+    background:transparent;
+    border:1px dashed red;
+    z-index: 6000;    
+}
+
+.debug:before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:50%;
+    left:37%;
+    width:25%;
+    border-top: 1px dotted yellow;
+}
+
+.debug:after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:37%;
+    left:50%;
+    height:25%;
+    border-left: 1px dotted yellow;
+}
+
+.hide { display: none; }
+.show { display: inline-block; }
+
+
+.button {
+    border-radius: 6px;
+    background: grey;
+    color: black;
+    border-right: #444444;
+    border-bottom: #444444;   
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 700;
+    font-family: arial;
+    padding-top: 10px;
+    border-radius: 9px;
+    text-align: center;
+    border: 4px solid #333;
+}
+
+#the-button {
+    width: 200px;
+    height: 30px;
+    top: 100%;
+    left: 35%;
+    
+    /* margin-top:  4px; */
+}
+
+#start-button {
+    position: absolute;
+    width: 200px;
+    top: 300px;
+    left: 430px;
+    z-index:  20000;
+    height:  25px;
+}
+
+#wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    height:788px;                
+    border:1px solid white;
+    z-index:100;
+}
+
+#game-area {
+    position: absolute;
+    left: 25px;
+    top: 35px;
+    
+    background-color: black;
+    
+    z-index:200;
+    overflow:hidden;
+}
+ 
+#title {
+    width: 60px; 
+    height: 100px; 
+    
+    background-image:url("../images/crate1.jpg");
+    background-size:100% 100%;
+}
+
+#demo-area {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    width: 98%;
+    height: 4em;
+    margin:  0 auto;
+}
+
+.screen {
+    width: 1024px;
+    height: 640px;
+}
+
+#game-screen {
+    background: white;
+    border: 2px solid black;
+    margin:  0 auto;
+    margin-top: 1em;
+}
+
+#splash-screen {
+    z-index: 10000;
+    background-image: url('../images/doom_cover.jpg');
+    background-size: 100% 100%;
+    margin: 40px 25px;
+    position: absolute;
+    top:  0;
+}
+
+#hud-overlay {
+    position: relative;
+    bottom: 0;
+    margin-left: 25px;
+    background-color: transparent;
+    
+    margin-top: 35px;
+    z-index:  10000;
+}
+
+.hud-elem {
+    width: 200px;
+    height: 200px;
+    background-image: url( '../images/hud.png' );
+    background-size: 200% 200%;
+    background-color: transparent;
+    position: absolute;
+}
+
+#hud-UL {
+    background-position: 0px 0px;
+    top: 0;
+    left: 0;
+}
+#hud-UR {
+    background-position: -200px 0px;
+    top: 0;
+    right: 0;
+}
+#hud-LL {
+    background-position: 0px -200px;
+    bottom: 0;
+    left: 0;
+}
+#hud-LR {
+    background-position: -200px -200px;
+    bottom: 0;
+    right: 0;
+}
+
